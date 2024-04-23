@@ -31,3 +31,4 @@ jobs:
           coverage-token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
           file: coverage.out
           strip-prefix: sample/
+          print-coverage: true
