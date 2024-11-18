@@ -26,9 +26,9 @@ jobs:
       - name: Run tests
         run: go test -coverprofile=coverage.out
 
-      - uses: qltyai/qlty-action/coverage@main
+      - uses: qltysh/qlty-action/coverage@main
         with:
           coverage-token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
-          file: coverage.out
+          files: coverage.out
           strip-prefix: sample/
           print-coverage: true
