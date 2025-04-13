@@ -8,6 +8,7 @@ on:
 permissions:
   actions: write
   contents: read
+  id-token: write
 
 jobs:
   test:
@@ -28,7 +29,6 @@ jobs:
 
       - uses: qltysh/qlty-action/coverage@main
         with:
-          coverage-token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
+          oidc: true
           files: coverage.out
           strip-prefix: sample/
-          print-coverage: true

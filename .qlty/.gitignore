@@ -1,4 +1,4 @@
-cache
-logs
-out
-plugins
+*
+!configs
+!hooks
+!qlty.toml
