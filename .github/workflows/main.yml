@@ -27,7 +27,7 @@ jobs:
       - name: Run tests
         run: go test -coverprofile=coverage.out
 
-      - uses: qltysh/qlty-action/coverage@v1
+      - uses: qltysh/qlty-action/coverage@b413a89d8f3a8b36b9edd20b7ef1ad7ae0a7ac3a # version 2.2.2
         with:
           oidc: true
           files: coverage.out
